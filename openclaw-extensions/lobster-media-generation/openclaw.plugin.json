@@ -1,0 +1,30 @@
+{
+  "id": "lobster-media-generation",
+  "name": "LobsterMediaGeneration",
+  "description": "Image and video generation tools powered by czclaw server.",
+  "contracts": {
+    "tools": [
+      "lobsterai_image_generate",
+      "lobsterai_video_generate"
+    ]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "callbackUrl": {
+        "type": "string",
+        "description": "czclaw HTTP callback URL for media generation requests"
+      },
+      "secret": {
+        "type": "string",
+        "description": "Shared secret for callback authentication"
+      },
+      "requestTimeoutMs": {
+        "type": "number",
+        "minimum": 1000,
+        "description": "Request timeout in milliseconds"
+      }
+    }
+  }
+}
