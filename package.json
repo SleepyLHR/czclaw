@@ -250,6 +250,6 @@
     "vite-plugin-electron": "^0.28.0",
     "vite-plugin-electron-renderer": "^0.14.5",
     "vitest": "^4.1.0",
-    "wait-on": "^7.2.0"
+    "wait-on": "^9.0.10"
   }
 }
